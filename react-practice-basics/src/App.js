@@ -7,7 +7,8 @@ import Header from './Header';
 // import AlphanumPassword from './AlphanumPassword';
 // import DisableSubmit from './DisableSubmit';
 // import ShowPassword from './ShowPassword';
-import DesignerTool from './DesignerTool';
+// import DesignerTool from './DesignerTool';
+import AddToCart from './AddToCart';
 
 
 
@@ -23,7 +24,8 @@ function App() {
     {/* <AlphanumPassword/> */}
     {/* <DisableSubmit/> */}
     {/* <ShowPassword/> */}
-    <DesignerTool/>
+    {/* <DesignerTool/> */}
+     <AddToCart/>
     </div>
   );
 }
