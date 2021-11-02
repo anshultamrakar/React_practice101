@@ -8,7 +8,9 @@ import Header from './Header';
 // import DisableSubmit from './DisableSubmit';
 // import ShowPassword from './ShowPassword';
 // import DesignerTool from './DesignerTool';
-import AddToCart from './AddToCart';
+// import AddToCart from './AddToCart';
+import DarkMode from './DarkMode';
+ 
 
 
 
@@ -25,7 +27,9 @@ function App() {
     {/* <DisableSubmit/> */}
     {/* <ShowPassword/> */}
     {/* <DesignerTool/> */}
-     <AddToCart/>
+     {/* <AddToCart/> */}
+     <DarkMode/>
+    
     </div>
   );
 }
