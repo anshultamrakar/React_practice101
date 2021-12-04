@@ -2,8 +2,8 @@ import './App.css';
 import Header from './Header';
 // import SignUp from './SignUp';
 // import PasswordMatcher from './PasswordMatcher';
-import Counter from './Counter';
-    // import WishList from './WishList';
+// import Counter from './Counter';
+// import WishList from './WishList';
 // import CharacterCounter from './CharacterCounter';
 // import AlphanumPassword from './AlphanumPassword';
 // import DisableSubmit from './DisableSubmit';
@@ -22,7 +22,7 @@ function App() {
     <Header/>
     {/* <SignUp/> */}
     {/* <PasswordMatcher/> */}
-    <Counter/>
+    {/* <Counter/> */}
     {/* <WishList/> */}
     {/* <CharacterCounter/> */}
     {/* <AlphanumPassword/> */}
