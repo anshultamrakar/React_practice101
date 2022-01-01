@@ -37,7 +37,7 @@ const AddItems = () => {
      };
 
     const subItems = (id) => {
-        const  qtyValueDec = products.map((item) => item.id === id ?{ ...item, quantity: item.quantity-1 }:item);
+        const qtyValueDec = products.map((item) => item.id === id ?{ ...item, quantity: item.quantity-1 }:item);
         setProducts(qtyValueDec);
          };
 
@@ -46,21 +46,9 @@ const AddItems = () => {
          setProducts(removeItems)
      }
 
-       const handleMoreItems= (id) => {
-       const id = products.length ? products[products.length - 1].id + 1 : 1 ;
-       const newItems = {id , item : }
-      
-     }
-
-
   return (
     <main>
       <h2>Basket App</h2>
-      <input
-        type = "text"
-        placeholder="Enter more items"
-      />
-      <button onClick={() = handleMoreItems}>Add</ button>
       <ul>
         {products.map((item) => (
        <div key={item.id}>
@@ -75,7 +63,6 @@ const AddItems = () => {
           >
             <h3>{item.item}</h3>
             <p> Rs . {item.price}</p>
-
             <p> QTY : {item.quantity}</p>
             <button onClick={() => addItems(item.id)}> + </button>
             <button onClick={() => subItems(item.id)}> - </button>
