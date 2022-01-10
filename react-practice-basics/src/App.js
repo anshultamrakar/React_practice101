@@ -11,7 +11,7 @@ import Header from './Header';
 // import DesignerTool from './DesignerTool';
 // import AddToCart from './AddToCart';
 // import DarkMode from './DarkMode';
-import AddItems from './AddItems';
+import FruitBasket from './FruitBasket';
  
 
 
@@ -25,7 +25,7 @@ function App() {
     {/* <PasswordMatcher/> */}
     {/* <Counter/> */}
     {/* <WishList/> */}
-    <AddItems/>
+    <FruitBasket/>
       {/* <CharacterCounter/> */}
     {/* <AlphanumPassword/> */}
     {/* <DisableSubmit/> */}

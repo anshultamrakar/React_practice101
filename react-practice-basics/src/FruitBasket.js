@@ -6,24 +6,28 @@ const AddItems = () => {
       id: 1,
       item: "Mango",
       price: 899,
+      discount :255, 
       quantity: 1,
     },
     {
       id: 2,
       item: "Banana",
       price: 2499,
+      discount :255, 
       quantity: 1,
     },
     {
       id: 3,
       item: "Kiwi",
       price: 100,
+      discount :25, 
       quantity: 1,
     },
     {
       id: 4,
       item: "Watermelon",
       price: 500,
+     
       quantity: 1,
     },
   ]);
@@ -45,6 +49,10 @@ const AddItems = () => {
          const removeItems = products.filter((item) => item.id !== id )
          setProducts(removeItems)
      }
+    
+   const newItems = products.map((item) => item.price)
+   const summation = newItems.reduce((acc , value) => acc + value)
+   console.log(summation)
 
   return (
     <main>
@@ -70,6 +78,11 @@ const AddItems = () => {
           </li>
        </div>
         ))}
+        <div style = {{border : "1px solid black"}}>
+          <h2>Cart Details</h2>
+          <p> Price :  </p>
+         
+        </div>
       </ul>
     </main>
   );
