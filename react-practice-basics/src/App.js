@@ -1,5 +1,5 @@
 import './App.css';
-import Header from './Header';
+// import Header from './Header';
 // import SignUp from './SignUp';
 // import PasswordMatcher from './PasswordMatcher';
 // import Counter from './Counter';
@@ -21,7 +21,7 @@ import Login from './Login';
 function App() {
   return (
     <div className="App">
-    <Header/>
+    {/* <Header/> */}
     {/* <SignUp/> */}
     {/* <PasswordMatcher/> */}
     {/* <Counter/> */}
