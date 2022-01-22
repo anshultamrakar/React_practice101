@@ -12,7 +12,8 @@ import './App.css';
 // import AddToCart from './AddToCart';
 // import DarkMode from './DarkMode';
 // import FruitBasket from './FruitBasket';
-import Login from './Login';
+// import Login from './Login';
+import Address from './Address';
  
 
 
@@ -27,7 +28,8 @@ function App() {
     {/* <Counter/> */}
     {/* <WishList/> */}
     {/* <FruitBasket/> */}
-    <Login/>
+    <Address/>
+    {/* <Login/> */}
       {/* <CharacterCounter/> */}
     {/* <AlphanumPassword/> */}
     {/* <DisableSubmit/> */}

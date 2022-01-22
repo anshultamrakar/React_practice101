@@ -27,16 +27,13 @@ const AddItems = () => {
       id: 4,
       item: "Watermelon",
       price: 500,
-     
       quantity: 1,
     },
   ]);
 
 
-
-
     const addItems = (id) => {
-    const  qtyValue = products.map((item) => item.id === id ?{ ...item, quantity: item.quantity+1 }:item);
+    const qtyValue = products.map((item) => item.id === id ?{ ...item, quantity: item.quantity + 1 }:item);
     setProducts(qtyValue);
      };
 
@@ -50,9 +47,9 @@ const AddItems = () => {
          setProducts(removeItems)
      }
     
-   const newItems = products.map((item) => item.price)
-   const summation = newItems.reduce((acc , value) => acc + value)
-   console.log(summation)
+  const totalPrice = products.reduce((acc, value) => acc + value.price,0);
+  const totalquantity = products.reduce((acc,value) => acc + value.quantity,0);
+ 
 
   return (
     <main>
@@ -73,14 +70,16 @@ const AddItems = () => {
             <p> Rs . {item.price}</p>
             <p> QTY : {item.quantity}</p>
             <button onClick={() => addItems(item.id)}> + </button>
-            <button onClick={() => subItems(item.id)}> - </button>
+            <button disabled = {item.quantity === 1} onClick={() => subItems(item.id)}> - </button>
             <button onClick={() => handleRemove(item.id)}> Remove </button>
           </li>
        </div>
         ))}
         <div style = {{border : "1px solid black"}}>
           <h2>Cart Details</h2>
-          <p> Price :  </p>
+          <p> Total Quantity: {totalquantity} </p>
+          <p style = {{ color : "red"}}>Discount: - 98  </p>
+          <p> Total Price: Rs. {totalPrice -98 }  </p>
          
         </div>
       </ul>
